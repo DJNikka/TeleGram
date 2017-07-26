@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CameraVC: UIViewController {
 
@@ -16,6 +17,15 @@ class CameraVC: UIViewController {
     }
 
  
+    override func viewDidAppear(_ animated: Bool) {
+        
+        guard Auth.auth().currentUser != nil else {
+            //load login VC
+            return
+        }
+        
+        }
+    
 
 
 }
