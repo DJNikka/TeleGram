@@ -26,6 +26,11 @@ class RoundTextField: UITextField {
             layer.borderWidth = borderWidth
         }
     }
+    @IBInspectable var borderColor: UIColor? {
+        didSet {
+            layer.borderColor = borderColor?.cgColor
+        }
+    }
 
     
 
