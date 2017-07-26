@@ -21,7 +21,12 @@ class RoundTextField: UITextField {
             //if corner is rounded at all, turn on bordering
         }
     }
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
 
-        
+    
 
 }
