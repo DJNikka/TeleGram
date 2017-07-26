@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07B91F29197800FB4114 /* RoundTextField.swift */; };
 		63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325271F26C26C00CA097B /* AppDelegate.swift */; };
 		63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325291F26C26C00CA097B /* CameraVC.swift */; };
 		63D3252D1F26C26D00CA097B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D3252B1F26C26D00CA097B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		636F07B91F29197800FB4114 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		63D325241F26C26C00CA097B /* TeleGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D325271F26C26C00CA097B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D325291F26C26C00CA097B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -54,14 +56,31 @@
 		63D325261F26C26C00CA097B /* TeleGram */ = {
 			isa = PBXGroup;
 			children = (
+				63D325401F26CE6900CA097B /* Controller */,
 				63D325271F26C26C00CA097B /* AppDelegate.swift */,
-				63D325291F26C26C00CA097B /* CameraVC.swift */,
 				63D3252B1F26C26D00CA097B /* Main.storyboard */,
 				63D3252E1F26C26D00CA097B /* Assets.xcassets */,
 				63D325301F26C26D00CA097B /* LaunchScreen.storyboard */,
 				63D325331F26C26D00CA097B /* Info.plist */,
 			);
 			path = TeleGram;
+			sourceTree = "<group>";
+		};
+		63D325401F26CE6900CA097B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63D325291F26C26C00CA097B /* CameraVC.swift */,
+				63D325411F26CE8900CA097B /* View */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		63D325411F26CE8900CA097B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636F07B91F29197800FB4114 /* RoundTextField.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +116,7 @@
 					63D325231F26C26C00CA097B = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = D8ZBA7RCZR;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */,
+				636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */,
 				63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D8ZBA7RCZR;
 				INFOPLIST_FILE = TeleGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Everipedia.TeleGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,8 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D8ZBA7RCZR;
 				INFOPLIST_FILE = TeleGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Everipedia.TeleGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +328,7 @@
 				63D325381F26C26D00CA097B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
