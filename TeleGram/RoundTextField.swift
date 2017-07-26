@@ -11,5 +11,17 @@ import UIKit
 @IBDesignable
 class RoundTextField: UITextField {
 
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        //default value is 0
+        
+        didSet{
+            layer.cornerRadius = cornerRadius
+            layer.masksToBounds = cornerRadius > 0
+            
+            //if corner is rounded at all, turn on bordering
+        }
+    }
+
+        
 
 }
