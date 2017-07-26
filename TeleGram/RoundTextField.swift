@@ -38,12 +38,12 @@ class RoundTextField: UITextField {
     }
     
     @IBInspectable var placeholderColor: UIColor? {
-    didSet {
+        didSet {
+    
     
             let rawString = attributedPlaceholder?.string != nil ? attributedPlaceholder!.string : ""
             //ternary operation acting upon existing, adds existing placeholder empty text, reassigns color to text field
-    
-        
+          
         
             let str = NSAttributedString(string: rawString, attributes: [NSForegroundColorAttributeName: placeholderColor!])
             attributedPlaceholder = str
