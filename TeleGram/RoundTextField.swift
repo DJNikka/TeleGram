@@ -31,7 +31,11 @@ class RoundTextField: UITextField {
             layer.borderColor = borderColor?.cgColor
         }
     }
-
+    @IBInspectable var bgColor: UIColor? {
+        didSet {
+            backgroundColor = bgColor
+        }
+    }
     
 
 }
