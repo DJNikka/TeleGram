@@ -81,11 +81,12 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     
     override func viewDidAppear(_ animated: Bool) {
 
+ 
         guard Auth.auth().currentUser != nil else {
-            //load login VC
-
             performSegue(withIdentifier: "LoginVC", sender: nil)
             return
+            
+                  //load login VC
         }
 
     }
