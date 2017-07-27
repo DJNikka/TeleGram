@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07B91F29197800FB4114 /* RoundTextField.swift */; };
 		636F07BC1F2925CB00FB4114 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BB1F2925CB00FB4114 /* RoundedButton.swift */; };
+		636F07BE1F295B8200FB4114 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BD1F295B8200FB4114 /* LoginVC.swift */; };
 		63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325271F26C26C00CA097B /* AppDelegate.swift */; };
 		63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325291F26C26C00CA097B /* CameraVC.swift */; };
 		63D3252D1F26C26D00CA097B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D3252B1F26C26D00CA097B /* Main.storyboard */; };
 		63D3252F1F26C26D00CA097B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D3252E1F26C26D00CA097B /* Assets.xcassets */; };
 		63D325321F26C26D00CA097B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D325301F26C26D00CA097B /* LaunchScreen.storyboard */; };
+		63D6600F1F2976DD00120986 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63D6600E1F2976DD00120986 /* GoogleService-Info.plist */; };
 		F9200579737190377676D14A /* Pods_TeleGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D2D97ED020E5B6EA8D5C54 /* Pods_TeleGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		636F07B91F29197800FB4114 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		636F07BB1F2925CB00FB4114 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		636F07BD1F295B8200FB4114 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		63D325241F26C26C00CA097B /* TeleGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D325271F26C26C00CA097B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D325291F26C26C00CA097B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		63D3252E1F26C26D00CA097B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D325311F26C26D00CA097B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D325331F26C26D00CA097B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D6600E1F2976DD00120986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6548A99A6FA0CB7AC59E391D /* Pods-TeleGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeleGram/Pods-TeleGram.release.xcconfig"; sourceTree = "<group>"; };
 		8041E27717A91633695646A9 /* Pods-TeleGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeleGram/Pods-TeleGram.debug.xcconfig"; sourceTree = "<group>"; };
 		A1D2D97ED020E5B6EA8D5C54 /* Pods_TeleGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeleGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				63D325261F26C26C00CA097B /* TeleGram */,
+				63D6600E1F2976DD00120986 /* GoogleService-Info.plist */,
 				63D325251F26C26C00CA097B /* Products */,
 				E518F0525495298E7FD5FDF8 /* Pods */,
 				EFD932ADA4E2CF04422FE1DF /* Frameworks */,
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				63D325291F26C26C00CA097B /* CameraVC.swift */,
+				636F07BD1F295B8200FB4114 /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D325321F26C26D00CA097B /* LaunchScreen.storyboard in Resources */,
+				63D6600F1F2976DD00120986 /* GoogleService-Info.plist in Resources */,
 				63D3252F1F26C26D00CA097B /* Assets.xcassets in Resources */,
 				63D3252D1F26C26D00CA097B /* Main.storyboard in Resources */,
 			);
@@ -235,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636F07BE1F295B8200FB4114 /* LoginVC.swift in Sources */,
 				63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */,
 				636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */,
 				63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */,
