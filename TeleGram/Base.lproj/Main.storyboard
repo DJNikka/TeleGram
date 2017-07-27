@@ -127,6 +127,9 @@
                                                                 <color key="value" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2en-L3-dFz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -168,6 +171,10 @@
                             <constraint firstItem="gKa-ys-rkj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xpZ-uT-hZ7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="NyO-xD-GZz" id="7Cf-vc-uQ5"/>
+                        <outlet property="passwordField" destination="Qby-Xl-BKH" id="ZyL-rF-VEY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
