@@ -67,6 +67,11 @@ class AuthService {
             case .wrongPassword:
                 onComplete?("Invalid password", nil)
                 break
+            case .emailAlreadyInUse:
+                onComplete?("Email in use", nil)
+                break
+                
+                
             default:
                 onComplete?("There was a problem authenticating. Try again", nil)
                 
