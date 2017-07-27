@@ -35,26 +35,29 @@ class AuthService {
                                     Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error)
                                         in
                                         if error != nil {
-                                            //show error to user
+                                            self.handleFirebaseError(error: error! as NSError, onComplete: onComplete)
                                         } else {
-                                            //we have successfully logged in
-                                        }
-                                    })
+                                            //successfully logged in
+                                                  onComplete?(nil, user)
+                                                }
+                                            }
+                                        )
+                                    }
+                                }
                             }
-                        }
-                                   
-                        })
-                        
+                        )
                     }
             
                 } else {
                     //handle all other errors
+                    self.handleFirebaseError(error: error! as NSError, onComplete: onComplete)
                 }
             } else {
                 //successfully logged in
+                onComplete?(nil, user)
             }
-            
-        })
+           }
+        )
     }
     
     func handleFirebaseError(error: NSError, onComplete: Completion?) {
@@ -70,7 +73,7 @@ class AuthService {
             case .emailAlreadyInUse, .accountExistsWithDifferentCredential:
                 onComplete?("Email in use", nil)
                 break
-                               
+                
             default:
                 onComplete?("There was a problem authenticating. Try again", nil)
                 
