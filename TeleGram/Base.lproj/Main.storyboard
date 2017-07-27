@@ -19,15 +19,112 @@
                     <view key="view" contentMode="scaleToFill" id="OHH-So-PO3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fv-gg-Ouj" customClass="PreviewView" customModule="TeleGram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jff-mE-4nw">
+                                        <rect key="frame" x="104.5" y="119" width="166" height="409"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnX-xV-QPM">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="30"/>
+                                                <state key="normal" title="Live Photo Mode: On"/>
+                                                <connections>
+                                                    <action selector="toggleLivePhotoMode:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="fPf-4J-e2t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm4-8s-FRJ">
+                                                <rect key="frame" x="0.0" y="50" width="54" height="30"/>
+                                                <state key="normal" title="Camera"/>
+                                                <connections>
+                                                    <action selector="changeCamera:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="NP4-Ab-lcA"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E1-xi-3Ci">
+                                                <rect key="frame" x="0.0" y="100" width="31" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAJ-el-59z">
+                                                <rect key="frame" x="0.0" y="140.5" width="49" height="30"/>
+                                                <state key="normal" title="Record"/>
+                                                <connections>
+                                                    <action selector="toggleMovieRecording:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="4Fs-sv-zH7"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Unavailable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyW-zI-iqe">
+                                                <rect key="frame" x="0.0" y="190.5" width="152" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-Ou-xhU">
+                                                <rect key="frame" x="0.0" y="231" width="166" height="30"/>
+                                                <state key="normal" title="Depth Data Delivery: On"/>
+                                                <connections>
+                                                    <action selector="toggleDepthDataDeliveryMode:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="CZ8-az-M4j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6p-Dm-R5a">
+                                                <rect key="frame" x="0.0" y="281" width="41" height="30"/>
+                                                <state key="normal" title="Photo"/>
+                                                <connections>
+                                                    <action selector="capturePhoto:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="KaA-24-Dps"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp4-Wu-dxY">
+                                                <rect key="frame" x="0.0" y="331" width="55" height="30"/>
+                                                <state key="normal" title="Resume"/>
+                                                <connections>
+                                                    <action selector="resumeInterruptedSession:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="Km7-Ho-Rt3"/>
+                                                </connections>
+                                            </button>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JBI-fN-kek">
+                                                <rect key="frame" x="0.0" y="381" width="103" height="29"/>
+                                                <segments>
+                                                    <segment title="Photo"/>
+                                                    <segment title="Movie"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="toggleCaptureMode:" destination="X0i-3l-Pe5" eventType="touchUpInside" id="ciU-ZP-obH"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jff-mE-4nw" firstAttribute="centerY" secondItem="8fv-gg-Ouj" secondAttribute="centerY" id="BUA-Ub-sVQ"/>
+                                    <constraint firstItem="jff-mE-4nw" firstAttribute="centerX" secondItem="8fv-gg-Ouj" secondAttribute="centerX" id="oOb-0v-d8i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8fv-gg-Ouj" firstAttribute="top" secondItem="lg1-F4-Waq" secondAttribute="bottom" id="EI3-Ve-vtc"/>
+                            <constraint firstAttribute="trailing" secondItem="8fv-gg-Ouj" secondAttribute="trailing" id="S6D-Ei-Urf"/>
+                            <constraint firstItem="g2u-G7-RJr" firstAttribute="top" secondItem="8fv-gg-Ouj" secondAttribute="bottom" id="e6k-Zn-haJ"/>
+                            <constraint firstItem="8fv-gg-Ouj" firstAttribute="leading" secondItem="OHH-So-PO3" secondAttribute="leading" id="tPa-eU-Wj1"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="Mm4-8s-FRJ" id="adr-dS-oTB"/>
+                        <outlet property="cameraUnavailableLabel" destination="fyW-zI-iqe" id="MVV-vv-dNh"/>
+                        <outlet property="captureModeControl" destination="JBI-fN-kek" id="QdT-Lv-sm3"/>
+                        <outlet property="capturingLivePhotoLabel" destination="7E1-xi-3Ci" id="YWG-ny-yDp"/>
+                        <outlet property="depthDataDeliveryButton" destination="bmR-Ou-xhU" id="ZAv-dU-bEH"/>
+                        <outlet property="livePhotoModeButton" destination="EnX-xV-QPM" id="FcQ-hB-nE5"/>
+                        <outlet property="photoButton" destination="k6p-Dm-R5a" id="wrv-CU-8Dv"/>
+                        <outlet property="previewView" destination="8fv-gg-Ouj" id="ZCt-Gr-JNh"/>
+                        <outlet property="recordButton" destination="UAJ-el-59z" id="app-hP-rIB"/>
+                        <outlet property="resumeButton" destination="zp4-Wu-dxY" id="c5B-jW-bDa"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginVC" id="K8y-6p-sQF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxt-76-BPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="36"/>
+            <point key="canvasLocation" x="804" y="35.532233883058474"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
@@ -128,7 +225,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2en-L3-dFz"/>
+                                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2O-MF-nfG"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

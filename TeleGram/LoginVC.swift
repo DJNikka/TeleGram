@@ -17,10 +17,11 @@ class LoginVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
     @IBAction func loginPressed(_ sender: Any) {
+    
         if let email = emailField.text, let pass = passwordField.text, (email.characters.count > 0 && pass.characters.count > 0) {
             
+            AuthService.instance.login(email: email, password: pass)
             //call the login service
         } else {
         let alert = UIAlertController(title: "Username and Password Required", message: "You must enter both a username and a password", preferredStyle: .alert)

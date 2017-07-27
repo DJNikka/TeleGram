@@ -8,6 +8,8 @@ View controller for camera interface.
 import UIKit
 import AVFoundation
 import Photos
+import Firebase
+import FirebaseAuth
 
 class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
 	// MARK: View Controller Life Cycle
@@ -23,8 +25,12 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         depthDataDeliveryButton.isEnabled = false
 		captureModeControl.isEnabled = false
 		
+        
+        
 		// Set up the video preview view.
 		previewView.session = session
+        
+   
 		
 		/*
 			Check video authorization status. Video access is required and audio
@@ -72,6 +78,17 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			self.configureSession()
 		}
 	}
+    
+    override func viewDidAppear(_ animated: Bool) {
+
+        guard Auth.auth().currentUser != nil else {
+            //load login VC
+
+            performSegue(withIdentifier: "LoginVC", sender: nil)
+            return
+        }
+
+    }
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
