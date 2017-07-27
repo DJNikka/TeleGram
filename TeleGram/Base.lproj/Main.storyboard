@@ -4,15 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--CameraVC-->
+        <!--Camera View Controller-->
         <scene sceneID="1dT-zO-1Q9">
             <objects>
-                <viewController id="X0i-3l-Pe5" customClass="CameraVC" customModule="TeleGram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X0i-3l-Pe5" customClass="CameraViewController" customModule="TeleGram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lg1-F4-Waq"/>
                         <viewControllerLayoutGuide type="bottom" id="g2u-G7-RJr"/>

@@ -45,7 +45,7 @@ class RoundTextField: UITextField {
             //ternary operation acting upon existing, adds existing placeholder empty text, reassigns color to text field
           
         
-            let str = NSAttributedString(string: rawString, attributes: [NSForegroundColorAttributeName: placeholderColor!])
+            let str = NSAttributedString(string: rawString, attributes: [NSAttributedStringKey.foregroundColor: placeholderColor!])
             attributedPlaceholder = str
         }
     

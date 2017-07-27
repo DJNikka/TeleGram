@@ -32,3 +32,4 @@ class PreviewView: UIView {
 		return AVCaptureVideoPreviewLayer.self
 	}
 }
+
