@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634731C81F298FB000FB20AD /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634731C71F298FB000FB20AD /* PreviewView.swift */; };
+		634731CA1F298FB500FB20AD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634731C91F298FB500FB20AD /* CameraViewController.swift */; };
+		634731CC1F298FC000FB20AD /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634731CB1F298FC000FB20AD /* PhotoCaptureDelegate.swift */; };
 		636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07B91F29197800FB4114 /* RoundTextField.swift */; };
 		636F07BC1F2925CB00FB4114 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BB1F2925CB00FB4114 /* RoundedButton.swift */; };
 		636F07BE1F295B8200FB4114 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BD1F295B8200FB4114 /* LoginVC.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		634731C71F298FB000FB20AD /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		634731C91F298FB500FB20AD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		634731CB1F298FC000FB20AD /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		636F07B91F29197800FB4114 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		636F07BB1F2925CB00FB4114 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		636F07BD1F295B8200FB4114 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				63D325291F26C26C00CA097B /* CameraVC.swift */,
+				634731C91F298FB500FB20AD /* CameraViewController.swift */,
+				634731CB1F298FC000FB20AD /* PhotoCaptureDelegate.swift */,
 				636F07BD1F295B8200FB4114 /* LoginVC.swift */,
 			);
 			name = Controller;
@@ -93,6 +101,7 @@
 		63D325411F26CE8900CA097B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				634731C71F298FB000FB20AD /* PreviewView.swift */,
 				636F07B91F29197800FB4114 /* RoundTextField.swift */,
 				636F07BB1F2925CB00FB4114 /* RoundedButton.swift */,
 			);
@@ -246,7 +255,10 @@
 				63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */,
 				636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */,
 				63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */,
+				634731CA1F298FB500FB20AD /* CameraViewController.swift in Sources */,
 				636F07BC1F2925CB00FB4114 /* RoundedButton.swift in Sources */,
+				634731CC1F298FC000FB20AD /* PhotoCaptureDelegate.swift in Sources */,
+				634731C81F298FB000FB20AD /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
