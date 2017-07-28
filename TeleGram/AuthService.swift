@@ -11,15 +11,15 @@ import Firebase
 import FirebaseAuth
 import SwiftKeychainWrapper
 
-let DB_BASE = Database.database().reference()
-let STORAGE_BASE = Storage.storage().reference()
+//let DB_BASE = Database.database().reference()
+//let STORAGE_BASE = Storage.storage().reference()
 
 typealias Completion = (_ errMsg: String?,_ data: AnyObject?) -> Void
 
 class AuthService {
     private static let _instance = AuthService()
-    private var _REF_BASE = DB_BASE
-    private var _REF_USERS = DB_BASE.child("users")
+//    private var _REF_BASE = DB_BASE
+//    private var _REF_USERS = DB_BASE.child("users")
     
     static var instance: AuthService {
         return _instance
@@ -41,6 +41,8 @@ class AuthService {
                             } else {
                                 if user?.uid != nil {
                                     //Sign in
+                                    DataService.instance.saveUser(uid: user!.uid)
+                                    
                                     Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error)
                                         in
                                         if error != nil {
@@ -91,15 +93,6 @@ class AuthService {
         }
     }
     
-    var REF_USER_CURRENT: DatabaseReference {
-        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
-        let user = _REF_USERS.child(uid!)
-        return user
-    }
-    
-    func createFirbaseDBUser(uid: String, userData: Dictionary<String, String>) {
-        _REF_USERS.child(uid).updateChildValues(userData)
-        
-    }
+  
     
 }
