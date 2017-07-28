@@ -14,7 +14,7 @@ class UserCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setCheckmark(selected: false)
     }
     
     func updateUI(user: User) {
@@ -29,7 +29,6 @@ class UserCell: UITableViewCell {
         self.accessoryView = UIImageView(image: UIImage(named: imageStr))
         
         
-        //needs selected images, 12:00 min downloading and parsing
     }
     
 }
