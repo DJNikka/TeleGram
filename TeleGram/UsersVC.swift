@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    private var users = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

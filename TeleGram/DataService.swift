@@ -11,8 +11,11 @@ import FirebaseDatabase
 import SwiftKeychainWrapper
 import FirebaseStorage
 
+let FIR_CHILD_USERS = "users"
+
 let DB_BASE = Database.database().reference()
 let STORAGE_BASE = Storage.storage().reference()
+
 
 class DataService {
     private static let _instance = DataService()
@@ -29,10 +32,12 @@ class DataService {
     
     func saveUser(uid: String) {
         let profile: Dictionary<String, AnyObject> = ["firstName": "" as AnyObject, "lastName": "" as AnyObject]
-        mainRef.child("users").child(uid).child("profile").setValue(profile)
+        mainRef.child(FIR_CHILD_USERS).child(uid).child("profile").setValue(profile)
     }
 
-
+    var usersRef: DatabaseReference {
+    return mainRef.child("users")
+    }
 
 var REF_USER_CURRENT: DatabaseReference {
     let uid = KeychainWrapper.standard.string(forKey: KEY_UID)

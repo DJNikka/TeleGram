@@ -16,8 +16,17 @@ class UserCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func updateUI(user: User) {
+        
+        firstNameLbl.text = user.firstName
+        
+        
+    }
 
     func setCheckmark(selected: Bool) {
+        let imageStr = selected ? "messageindicatorchecked1" : "messageindicator1"
+        self.accessoryView = UIImageView(image: UIImage(named: imageStr))
         
         
         //needs selected images, 12:00 min downloading and parsing
