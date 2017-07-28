@@ -14,6 +14,7 @@
 		636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07B91F29197800FB4114 /* RoundTextField.swift */; };
 		636F07BC1F2925CB00FB4114 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BB1F2925CB00FB4114 /* RoundedButton.swift */; };
 		636F07BE1F295B8200FB4114 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BD1F295B8200FB4114 /* LoginVC.swift */; };
+		63A2CEC01F2AB48A00C25B57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2CEBF1F2AB48A00C25B57 /* Constants.swift */; };
 		63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325271F26C26C00CA097B /* AppDelegate.swift */; };
 		63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325291F26C26C00CA097B /* CameraVC.swift */; };
 		63D3252D1F26C26D00CA097B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D3252B1F26C26D00CA097B /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		636F07B91F29197800FB4114 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		636F07BB1F2925CB00FB4114 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		636F07BD1F295B8200FB4114 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		63A2CEBF1F2AB48A00C25B57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		63D325241F26C26C00CA097B /* TeleGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D325271F26C26C00CA097B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D325291F26C26C00CA097B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		63A2CEBE1F2AAEE300C25B57 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				63A2CEBF1F2AB48A00C25B57 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		63D3251B1F26C26C00CA097B = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		63D325261F26C26C00CA097B /* TeleGram */ = {
 			isa = PBXGroup;
 			children = (
+				63A2CEBE1F2AAEE300C25B57 /* Util */,
 				634731DF1F29BCE700FB20AD /* Services */,
 				63D325411F26CE8900CA097B /* View */,
 				63D325401F26CE6900CA097B /* Controller */,
@@ -267,6 +278,7 @@
 				63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */,
 				634731E11F29BD0500FB20AD /* AuthService.swift in Sources */,
 				636F07BA1F29197800FB4114 /* RoundTextField.swift in Sources */,
+				63A2CEC01F2AB48A00C25B57 /* Constants.swift in Sources */,
 				63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */,
 				636F07BC1F2925CB00FB4114 /* RoundedButton.swift in Sources */,
 				634731DC1F29A69A00FB20AD /* PhotoCaptureDelegate.swift in Sources */,

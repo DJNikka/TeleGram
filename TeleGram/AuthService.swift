@@ -7,15 +7,24 @@
 //
 
 import Foundation
+import Firebase
 import FirebaseAuth
+import SwiftKeychainWrapper
+
+let DB_BASE = Database.database().reference()
+let STORAGE_BASE = Storage.storage().reference()
 
 typealias Completion = (_ errMsg: String?,_ data: AnyObject?) -> Void
 
 class AuthService {
     private static let _instance = AuthService()
+    private var _REF_BASE = DB_BASE
+    private var _REF_USERS = DB_BASE.child("users")
     
     static var instance: AuthService {
         return _instance
+        
+        
     }
     func login(email: String, password: String, onComplete: Completion?) {
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
@@ -80,6 +89,17 @@ class AuthService {
                 //handles the possible errors with email authentication
             }
         }
+    }
+    
+    var REF_USER_CURRENT: DatabaseReference {
+        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
+        let user = _REF_USERS.child(uid!)
+        return user
+    }
+    
+    func createFirbaseDBUser(uid: String, userData: Dictionary<String, String>) {
+        _REF_USERS.child(uid).updateChildValues(userData)
+        
     }
     
 }

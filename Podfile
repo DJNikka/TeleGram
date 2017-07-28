@@ -11,5 +11,9 @@ target 'TeleGram' do
   pod 'Firebase'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKCoreKit'
+  pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
 
 end

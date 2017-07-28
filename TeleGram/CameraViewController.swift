@@ -10,10 +10,18 @@ import AVFoundation
 import Photos
 import Firebase
 import FirebaseAuth
+import SwiftKeychainWrapper
 
 class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelegate {
 	// MARK: View Controller Life Cycle
 	
+    @IBAction func signOutTapped(_ sender: Any) {
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("NIKKA: ID removed from keychain \(keychainResult)")
+        performSegue(withIdentifier: "LoginVC", sender: nil)
+        return
+    }
+    
     override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -1010,4 +1018,8 @@ extension AVCaptureDevice.DiscoverySession {
         
         return uniqueDevicePositions.count
     }
+    
+ 
+
+    
 }
