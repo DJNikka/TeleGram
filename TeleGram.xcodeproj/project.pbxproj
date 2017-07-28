@@ -16,6 +16,8 @@
 		636F07BE1F295B8200FB4114 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F07BD1F295B8200FB4114 /* LoginVC.swift */; };
 		63A2CEC01F2AB48A00C25B57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2CEBF1F2AB48A00C25B57 /* Constants.swift */; };
 		63A2CEC21F2AB8FA00C25B57 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2CEC11F2AB8FA00C25B57 /* DataService.swift */; };
+		63A2CEC41F2AC10800C25B57 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2CEC31F2AC10800C25B57 /* UsersVC.swift */; };
+		63A2CEC61F2AC37C00C25B57 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2CEC51F2AC37C00C25B57 /* UserCell.swift */; };
 		63D325281F26C26C00CA097B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325271F26C26C00CA097B /* AppDelegate.swift */; };
 		63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D325291F26C26C00CA097B /* CameraVC.swift */; };
 		63D3252D1F26C26D00CA097B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D3252B1F26C26D00CA097B /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		636F07BD1F295B8200FB4114 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		63A2CEBF1F2AB48A00C25B57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		63A2CEC11F2AB8FA00C25B57 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		63A2CEC31F2AC10800C25B57 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		63A2CEC51F2AC37C00C25B57 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		63D325241F26C26C00CA097B /* TeleGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D325271F26C26C00CA097B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D325291F26C26C00CA097B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				634731DB1F29A69A00FB20AD /* PhotoCaptureDelegate.swift */,
 				634731D91F29A61600FB20AD /* CameraViewController.swift */,
 				636F07BD1F295B8200FB4114 /* LoginVC.swift */,
+				63A2CEC31F2AC10800C25B57 /* UsersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				636F07B91F29197800FB4114 /* RoundTextField.swift */,
 				636F07BB1F2925CB00FB4114 /* RoundedButton.swift */,
 				634731DD1F29A6A400FB20AD /* PreviewView.swift */,
+				63A2CEC51F2AC37C00C25B57 /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636F07BE1F295B8200FB4114 /* LoginVC.swift in Sources */,
+				63A2CEC61F2AC37C00C25B57 /* UserCell.swift in Sources */,
 				634731DE1F29A6A400FB20AD /* PreviewView.swift in Sources */,
 				63D3252A1F26C26C00CA097B /* CameraVC.swift in Sources */,
 				634731E11F29BD0500FB20AD /* AuthService.swift in Sources */,
@@ -287,6 +294,7 @@
 				636F07BC1F2925CB00FB4114 /* RoundedButton.swift in Sources */,
 				634731DC1F29A69A00FB20AD /* PhotoCaptureDelegate.swift in Sources */,
 				634731DA1F29A61600FB20AD /* CameraViewController.swift in Sources */,
+				63A2CEC41F2AC10800C25B57 /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
