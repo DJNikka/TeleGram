@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="36"/>
+            <point key="canvasLocation" x="1423" y="-276"/>
         </scene>
         <!--UsersVC-->
         <scene sceneID="fm8-Sk-FQ1">
@@ -211,7 +211,13 @@
                                     <constraint firstAttribute="height" constant="44" id="eaN-FJ-g0h"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="XWF-Fm-jbH"/>
+                                    <navigationItem title="Send a TeleGram" id="XWF-Fm-jbH">
+                                        <barButtonItem key="rightBarButtonItem" image="send_snap" id="Ary-8w-dNi">
+                                            <connections>
+                                                <action selector="sendPRBtnPressedWithSender:" destination="LAW-TL-pxI" id="ELz-4s-FCS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LR3-M1-0HM">
@@ -240,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQB-Sp-Wap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2371.0144927536235" y="102.71739130434783"/>
+            <point key="canvasLocation" x="1542" y="395"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="sdL-6p-1Cw">
@@ -315,9 +321,8 @@
                                             <action selector="capturePhoto:" destination="xiG-Yp-8Ln" eventType="touchUpInside" id="pHt-2V-NfY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddB-2x-gqc" userLabel="Record">
-                                        <rect key="frame" x="20" y="678" width="80" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddB-2x-gqc" userLabel="Record">
+                                        <rect key="frame" x="20" y="680" width="62" height="36"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Record">
@@ -353,6 +358,7 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="FwT-Ri-u1e" secondAttribute="trailing" constant="20" id="4Hw-rQ-jfz"/>
+                                    <constraint firstItem="ddB-2x-gqc" firstAttribute="leading" secondItem="I9h-jZ-oX3" secondAttribute="leading" constant="20" id="5d2-1g-i5U"/>
                                     <constraint firstItem="27e-Kv-seE" firstAttribute="top" secondItem="cgK-qv-Y0c" secondAttribute="bottom" constant="75" id="Dxh-db-IgS"/>
                                     <constraint firstItem="bAS-4m-zNP" firstAttribute="top" secondItem="I9h-jZ-oX3" secondAttribute="top" constant="20" id="EI3-pr-kld"/>
                                     <constraint firstItem="FwT-Ri-u1e" firstAttribute="top" secondItem="I9h-jZ-oX3" secondAttribute="top" constant="20" id="Qdm-en-zVa"/>
@@ -360,6 +366,7 @@
                                     <constraint firstAttribute="bottom" secondItem="27e-Kv-seE" secondAttribute="bottom" constant="20" id="mR5-1q-xS2"/>
                                     <constraint firstItem="cgK-qv-Y0c" firstAttribute="centerX" secondItem="I9h-jZ-oX3" secondAttribute="centerX" id="sLv-jc-ecK"/>
                                     <constraint firstItem="dVS-Ja-ayi" firstAttribute="centerY" secondItem="I9h-jZ-oX3" secondAttribute="centerY" constant="37" id="uvS-Qo-hUM"/>
+                                    <constraint firstAttribute="bottom" secondItem="ddB-2x-gqc" secondAttribute="bottom" constant="20" id="vex-1s-gGL"/>
                                     <constraint firstItem="bAS-4m-zNP" firstAttribute="leading" secondItem="I9h-jZ-oX3" secondAttribute="leading" constant="20" id="w4a-r6-L4O"/>
                                 </constraints>
                                 <connections>
@@ -450,6 +457,7 @@
                         <outlet property="recordButton" destination="ddB-2x-gqc" id="LAX-ne-jNy"/>
                         <outlet property="resumeButton" destination="dVS-Ja-ayi" id="DjU-Zd-JHQ"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginVC" id="IXc-mN-nfK"/>
+                        <segue destination="LAW-TL-pxI" kind="show" identifier="UsersVC" id="h35-01-8Se"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5L3-OD-1uc" sceneMemberID="firstResponder"/>
@@ -464,6 +472,7 @@
     </scenes>
     <resources>
         <image name="OGKush" width="786" height="802"/>
+        <image name="send_snap" width="24" height="23"/>
         <image name="switchcam" width="512" height="512"/>
         <image name="takePhoto" width="512" height="512"/>
     </resources>

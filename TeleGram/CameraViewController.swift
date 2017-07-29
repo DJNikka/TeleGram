@@ -701,7 +701,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 		guard let movieFileOutput = self.movieFileOutput else {
 			return
 		}
-		
+
+        
 		/*
 			Disable the Camera button until recording finishes, and disable
 			the Record button until recording starts or finishes.
@@ -752,6 +753,9 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			}
 		}
 	}
+    
+   
+    
 	
 	func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
 		// Enable the Record button to let the user stop the recording.
@@ -762,6 +766,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 	}
     
     func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+        performSegue(withIdentifier: "UsersVC", sender: nil)
+        
 		/*
 			Note that currentBackgroundRecordingID is used to end the background task
 			associated with this recording. This allows a new recording to be started,
@@ -980,6 +986,12 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			)
 		}
 	}
+    
+     func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let usersVC = segue.destination as? UsersVC {
+    }
+    
+}
 }
 
 extension UIDeviceOrientation {
@@ -1019,7 +1031,9 @@ extension AVCaptureDevice.DiscoverySession {
         return uniqueDevicePositions.count
     }
     
- 
+    
 
     
 }
+
+
