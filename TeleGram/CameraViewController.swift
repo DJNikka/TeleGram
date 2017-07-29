@@ -544,6 +544,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 	
 	@IBOutlet private weak var photoButton: UIButton!
 	@IBAction private func capturePhoto(_ photoButton: UIButton) {
+        
+     
         /*
 			Retrieve the video preview layer's video orientation on the main queue before
 			entering the session queue. We do this to ensure UI elements are accessed on
@@ -633,6 +635,9 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			self.inProgressPhotoCaptureDelegates[photoCaptureProcessor.requestedPhotoSettings.uniqueID] = photoCaptureProcessor
 			self.photoOutput.capturePhoto(with: photoSettings, delegate: photoCaptureProcessor)
 		}
+        
+            performSegue(withIdentifier: "UsersVC", sender: nil)
+        
 	}
 	
 	private enum LivePhotoMode {
