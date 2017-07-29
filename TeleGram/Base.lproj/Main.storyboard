@@ -173,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-D2-5Hp">
-                                <rect key="frame" x="0.0" y="86" width="414" height="650"/>
+                                <rect key="frame" x="0.0" y="110" width="414" height="626"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="11" reuseIdentifier="UserCell" id="oUg-Zt-wL3" customClass="UserCell" customModule="TeleGram" customModuleProvider="target">
@@ -205,21 +205,33 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-MI-Oeh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eaN-FJ-g0h"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="XWF-Fm-jbH"/>
+                                </items>
+                            </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LR3-M1-0HM">
-                                <rect key="frame" x="0.0" y="20" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <color key="barTintColor" red="0.08137156894290716" green="0.25961690989847719" blue="0.075159900411355646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LR3-M1-0HM" firstAttribute="top" secondItem="B57-Mw-Urc" secondAttribute="top" constant="20" id="9wC-11-SUL"/>
-                            <constraint firstItem="u3j-D2-5Hp" firstAttribute="leading" secondItem="B57-Mw-Urc" secondAttribute="leading" id="DcF-jJ-clk"/>
-                            <constraint firstItem="cD0-3b-U2p" firstAttribute="top" secondItem="u3j-D2-5Hp" secondAttribute="bottom" id="H3u-PJ-hUx"/>
-                            <constraint firstAttribute="trailing" secondItem="u3j-D2-5Hp" secondAttribute="trailing" id="RmS-Ad-qaf"/>
-                            <constraint firstItem="u3j-D2-5Hp" firstAttribute="top" secondItem="LR3-M1-0HM" secondAttribute="bottom" constant="10" id="gHc-nc-udJ"/>
-                            <constraint firstAttribute="trailing" secondItem="LR3-M1-0HM" secondAttribute="trailing" id="h1T-Nx-vak"/>
-                            <constraint firstItem="LR3-M1-0HM" firstAttribute="leading" secondItem="B57-Mw-Urc" secondAttribute="leading" id="m9e-8w-tKF"/>
+                            <constraint firstAttribute="trailing" secondItem="LR3-M1-0HM" secondAttribute="trailing" id="1mz-bj-4v1"/>
+                            <constraint firstAttribute="trailing" secondItem="BUz-MI-Oeh" secondAttribute="trailing" id="4sm-gO-057"/>
+                            <constraint firstItem="BUz-MI-Oeh" firstAttribute="top" secondItem="B57-Mw-Urc" secondAttribute="top" id="6u3-2Y-n0e"/>
+                            <constraint firstItem="LR3-M1-0HM" firstAttribute="leading" secondItem="B57-Mw-Urc" secondAttribute="leading" id="CRg-b5-ZvX"/>
+                            <constraint firstAttribute="trailing" secondItem="u3j-D2-5Hp" secondAttribute="trailing" id="NRY-Hy-sMW"/>
+                            <constraint firstItem="BUz-MI-Oeh" firstAttribute="leading" secondItem="B57-Mw-Urc" secondAttribute="leading" id="Ptb-vs-UjQ"/>
+                            <constraint firstItem="LR3-M1-0HM" firstAttribute="top" secondItem="BUz-MI-Oeh" secondAttribute="bottom" id="VP1-AW-7D1"/>
+                            <constraint firstItem="cD0-3b-U2p" firstAttribute="top" secondItem="u3j-D2-5Hp" secondAttribute="bottom" id="WaY-Al-gyr"/>
+                            <constraint firstItem="u3j-D2-5Hp" firstAttribute="leading" secondItem="B57-Mw-Urc" secondAttribute="leading" id="YkO-AA-m0S"/>
+                            <constraint firstItem="u3j-D2-5Hp" firstAttribute="top" secondItem="LR3-M1-0HM" secondAttribute="bottom" constant="10" id="qPY-h9-IZ8"/>
                         </constraints>
                     </view>
                     <connections>
