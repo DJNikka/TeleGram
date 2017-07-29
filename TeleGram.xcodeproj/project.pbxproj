@@ -33,6 +33,7 @@
 		634731DB1F29A69A00FB20AD /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		634731DD1F29A6A400FB20AD /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		634731E01F29BD0500FB20AD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		63500D971F2BF896008147D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636F07B91F29197800FB4114 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		636F07BB1F2925CB00FB4114 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		636F07BD1F295B8200FB4114 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		63D3252C1F26C26D00CA097B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63D3252E1F26C26D00CA097B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D325311F26C26D00CA097B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		63D325331F26C26D00CA097B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63D6600E1F2976DD00120986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6548A99A6FA0CB7AC59E391D /* Pods-TeleGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeleGram/Pods-TeleGram.release.xcconfig"; sourceTree = "<group>"; };
 		8041E27717A91633695646A9 /* Pods-TeleGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeleGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeleGram/Pods-TeleGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 			children = (
 				63D325261F26C26C00CA097B /* TeleGram */,
 				63D6600E1F2976DD00120986 /* GoogleService-Info.plist */,
+				63500D971F2BF896008147D0 /* Info.plist */,
 				63D325251F26C26C00CA097B /* Products */,
 				E518F0525495298E7FD5FDF8 /* Pods */,
 				EFD932ADA4E2CF04422FE1DF /* Frameworks */,
@@ -122,7 +123,6 @@
 				63D3252B1F26C26D00CA097B /* Main.storyboard */,
 				63D3252E1F26C26D00CA097B /* Assets.xcassets */,
 				63D325301F26C26D00CA097B /* LaunchScreen.storyboard */,
-				63D325331F26C26D00CA097B /* Info.plist */,
 			);
 			path = TeleGram;
 			sourceTree = "<group>";

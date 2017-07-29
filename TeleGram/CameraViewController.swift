@@ -709,7 +709,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			See the AVCaptureFileOutputRecordingDelegate methods.
 		*/
 		cameraButton.isEnabled = false
-		recordButton.isEnabled = false
+        recordButton.isEnabled = false
 		captureModeControl.isEnabled = false
 		
 		/*
