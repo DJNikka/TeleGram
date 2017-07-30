@@ -24,8 +24,7 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.allowsMultipleSelection = true
         
         DataService.instance.usersRef.observeSingleEvent(of: .value) { (snapshot: DataSnapshot) in
-  
-            
+             
             if let users = snapshot.value as? Dictionary<String, AnyObject> {
                 for (key, value) in users {
                     if let dict = value as? Dictionary<String, AnyObject> {
@@ -47,8 +46,7 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
        
         //.value is whenever data is received
-        
-        // Do any additional setup after loading the view.
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -82,7 +82,7 @@ class AuthService {
                 onComplete?("Invalid password", nil)
                 break
             case .emailAlreadyInUse, .accountExistsWithDifferentCredential:
-                onComplete?("Email in use", nil)
+                onComplete?("Email is already in use", nil)
                 break
                 
             default:
