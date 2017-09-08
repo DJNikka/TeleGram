@@ -34,6 +34,13 @@ class DataService {
         return Storage.storage().reference(forURL: "gs://telegram-22ca9.appspot.com")
     }
     
+    var imagesStorageRef: StorageReference {
+        
+        return mainStorageRef.child("images")
+    }
+    
+    
+    
     func saveUser(uid: String) {
         let profile: Dictionary<String, AnyObject> = ["firstName": "" as AnyObject, "lastName": "" as AnyObject]
         mainRef.child(FIR_CHILD_USERS).child(uid).child("profile").setValue(profile)
