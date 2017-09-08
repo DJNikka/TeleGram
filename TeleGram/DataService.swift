@@ -40,6 +40,11 @@ class DataService {
     }
     
     
+    var videoStorageRef: StorageReference {
+        
+        return mainStorageRef.child("videos")
+    }
+    
     
     func saveUser(uid: String) {
         let profile: Dictionary<String, AnyObject> = ["firstName": "" as AnyObject, "lastName": "" as AnyObject]
