@@ -23,6 +23,8 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.dataSource = self
         tableView.allowsMultipleSelection = true
         
+        navigationItem.rightBarButtonItem?.isEnabled = false
+        
         DataService.instance.usersRef.observeSingleEvent(of: .value) { (snapshot: DataSnapshot) in
              
             if let users = snapshot.value as? Dictionary<String, AnyObject> {
@@ -60,6 +62,7 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationItem.rightBarButtonItem?.isEnabled = true
         let cell = tableView.cellForRow(at: indexPath) as! UserCell
         cell.setCheckmark(selected: true)
         let user = users[indexPath.row]
@@ -73,6 +76,11 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.setCheckmark(selected: false)
         let user = users[indexPath.row]
         selectedUsers[user.uid] = nil
+        
+        if selectedUsers.count <= 0 {
+            
+            navigationItem.rightBarButtonItem?.isEnabled = false
+        }
         
         
     }
