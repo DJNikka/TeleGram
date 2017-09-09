@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -96,6 +97,18 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBAction func sendPRBtnPressed(sender: AnyObject) {
+        
+        //need to add videoURL
+        if let url = _videoURL {
+            let videoName = "\(NSUUID().uuidString)\(url)"
+            let ref = DataService.instance.videoStorageRef.child(videoName)
+            
+            let task = ref.putFile(url, metadata: nil, completion: { (meta: StorageMetadata, err:NSError?) in
+                
+                
+            })
+        }
+        
 //        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
         
     }
